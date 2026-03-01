@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Year Five - The Commencement</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f8f6f3, #e8dfd8);
+    color: #2c2c2c;
+    scroll-behavior: smooth;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.small-date {
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    color: #777;
+}
+
+.year {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+h1 span {
+    display: block;
+}
+
+p {
+    max-width: 600px;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+button {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 30px;
+    background-color: #2c2c2c;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.highlight {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.footer {
+    font-size: 14px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    color: #666;
+}
+</style>
+</head>
+
+<body>
+
+<!-- SECTION 1 -->
+<section>
+    <div class="small-date">05</div>
+    <div class="year">10.01.2026 YEAR FIVE</div>
+
+    <div class="year">THE COMMENCEMENT</div>
+
+    <h1>
+        <span># A Presence</span>
+        <span>That Matters.</span>
+    </h1>
+
+    <p>
+        Five years ago, a journey began. Today, that journey celebrates its most beautiful highlight—you.
+    </p>
+
+    <button onclick="scrollToSection(1)">Open the Wish</button>
+</section>
+
+<!-- SECTION 2 -->
+<section>
+    <div class="year">THE CHARACTER</div>
+
+    <h1>
+        <span># Kindness in</span>
+        <span>Every Glance.</span>
+    </h1>
+
+    <p>
+        Distance never mattered because your kindness always found a way.
+        It's the depth in those brown eyes that tells the story of half a decade of friendship.
+    </p>
+
+    <button onclick="scrollToSection(2)">Celebrate</button>
+</section>
+
+<!-- SECTION 3 -->
+<section>
+    <div class="year">HAPPY BIRTHDAY</div>
+
+    <div class="highlight"># Tooba</div>
+
+    <p>
+        May your day be as radiant as your spirit.
+        Thank you for being the most genuine part of these last five years.
+    </p>
+
+    <div class="footer">
+        ALWAYS ADMIRING YOUR GRACE
+    </div>
+</section>
+
+<script>
+function scrollToSection(index) {
+    const sections = document.querySelectorAll("section");
+    if (sections[index]) {
+        sections[index].scrollIntoView({ behavior: "smooth" });
+    }
+}
+</script>
+
+</body>
+</html>
